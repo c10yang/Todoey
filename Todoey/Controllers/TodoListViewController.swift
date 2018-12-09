@@ -154,6 +154,7 @@ extension TodoListViewController: UISearchBarDelegate {
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         if searchBar.text?.count == 0{
+            print(searchBar.text?.count)
             loadItems()
             
             DispatchQueue.main.async {
